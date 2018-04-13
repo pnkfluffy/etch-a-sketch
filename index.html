@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <body>
   <h1>Etch-A-Sketch</h1>
+  <button id = "sixteen"> 16x </button>
+  <button id = "sixtyFour"> 64x </button>
+  <button id = "clear"> Clear Canvas </button>
   <div id = "container">
 
   </div>
@@ -9,18 +12,23 @@
 
 <style>
 #container {
-  width: 800px;
-  height: 800px;
+  width: 1024px;
+  height: 1024px;
   display: flex;
   flex-wrap: wrap;
 }
-.toBlack {
-  background-color: black;
-}
-.gridBox {
+div > div {
   background-color: grey;
   margin: 1px;
-  flex: 0 0 48px;
   flex-wrap: wrap;
+}
+.gridLengthSixteen {
+  flex: 0 0 62px;
+}
+.gridLengthSixtyFour {
+  flex: 0 0 14px;
+}
+.toBlack {
+  background-color: black;
 }
 </style>
